@@ -1,7 +1,7 @@
 class NewsController {
     // [GET] /news
-                    index(req, res) {
-                    res.send(`<h1>News Page</h1>`);
+    index(req, res) {
+        res.send(`<h1>News Page</h1>`);
     }
 
     // [GET] /news/:slug
