@@ -9,11 +9,10 @@ app.use(express.urlencoded({
 }))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send(`
-        <h1>Hello World!</h1>
-    `)
-})
+const route = require("./routes");
+
+// Route
+route(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
